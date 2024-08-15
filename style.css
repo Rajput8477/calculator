@@ -1,0 +1,81 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ecf0f3;
+}
+
+.container {
+    width: 75vh;
+    padding: 10px;
+    background: rgb(244, 240, 240);
+    border-radius: 8px;
+    box-shadow: 12px 12px 20px #d5dde1,
+        -12px -12px 20px rgb(211 219 227);
+}
+
+.calculator,
+#screen {
+    width: 99%;
+    height: 8vh;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    text-align: right;
+    border-radius: 6px;
+    background: #ecf0f3;
+    pointer-events: none;
+    box-shadow: inset 8px 8px 8px #cbced1,
+        inset -8px -8px 8px #ffffff;
+    color: black;
+}
+
+.btns {
+    width: 100%;
+    margin-top: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btns .row button {
+    width: 10.5vh;
+    height: 6.5vh;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: -5px -5px 8px #00000020, 5px 5px 8px #ffffff;
+
+}
+
+.operater {
+    color: rgb(236, 48, 48);
+}
+
+.btns .row button:active {
+    background: rgb(246, 253, 248);
+}
+
+@media  (min-width:240px) and (max-width:400px) {
+    .container {
+        width: fit-content;
+    }
+
+    .btns .row button {
+        width: 33.5px;
+
+    }
+}
+@media (max-width:240px) {
+    .btns .row button {
+        width: 30px;
+
+    }
+}
